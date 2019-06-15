@@ -23,7 +23,7 @@ const Form = ({ topic }) => {
     <div className='inputContainer'>
       <form>
         <Input
-          className='chatInput'
+          className='inputField'
           value={message}
           placeholder='New message'
           onChange={handleMessage}
@@ -31,7 +31,7 @@ const Form = ({ topic }) => {
           autoFocus={true}
         />
         <Button
-          className='sendBtn'
+          className='actionBtn'
           basic
           color='teal'
           content='Send'

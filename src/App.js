@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ChatBox from './components/Chatbox'
 import Login from './components/Login'
+import { Button } from 'semantic-ui-react'
 import Store from './Store'
 
 const App = () => {
@@ -28,6 +29,11 @@ const App = () => {
     setIsUserName(event.target.value)
   }
 
+  const handleLogout = () => {
+    window.localStorage.removeItem('loggedIn')
+    window.location.reload()
+  }
+
   return (
     <div>
       {loggedIn === null ? (
@@ -45,6 +51,7 @@ const App = () => {
         <div>
           <div className='headerContainer'>
             <h1>Select a topic and start chatting!</h1>
+            <Button className='actionBtn' basic color='teal' content='Logout' onClick={() => handleLogout()} />
           </div>
           <Store>
             <ChatBox />

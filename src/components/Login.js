@@ -7,7 +7,7 @@ const LoginForm = ({ username, usernameHandler, login }) => {
     <div className='loginPage'>
       <form onSubmit={login}>
         <Input
-          className='loginInput'
+          className='inputField'
           value={username}
           placeholder='Write a username'
           onChange={usernameHandler}
@@ -15,7 +15,7 @@ const LoginForm = ({ username, usernameHandler, login }) => {
         />
         <Button
           type='submit'
-          className='loginBtn'
+          className='actionBtn'
           basic
           color='teal'
           content='Login'

@@ -6,10 +6,11 @@
 
 .headerContainer {
     height: 100px;
-    width: 600px;
+    width: 630px;
     padding-left: 30px;
-   display: flex;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .chatBox {
@@ -34,15 +35,14 @@
     margin-left: 6px;
 }
 
-.chatInput {
+.inputField {
     position: absolute;
     width: 300px;
     height: 40px;
     margin-right: 10px;
 }
 
-.sendBtn{
-    position: absolute;
+.actionBtn{
     height:40px;
 }
 
